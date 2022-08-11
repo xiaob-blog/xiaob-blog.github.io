@@ -1,3 +1,2 @@
-http://zaoqirenlei.github.io/post/test.html
 http://zaoqirenlei.github.io/post/hello-world.html
 http://zaoqirenlei.github.io/
