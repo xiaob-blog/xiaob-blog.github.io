@@ -6,7 +6,7 @@
   <link href="http://zaoqirenlei.github.io/atom.xml" rel="self"/>
   
   <link href="http://zaoqirenlei.github.io/"/>
-  <updated>2022-08-10T11:17:23.247Z</updated>
+  <updated>2022-08-11T04:00:53.336Z</updated>
   <id>http://zaoqirenlei.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用VMware安装Macos12</title>
+    <link href="http://zaoqirenlei.github.io/post/%E4%BD%BF%E7%94%A8VMware%E5%AE%89%E8%A3%85Macos12.html"/>
+    <id>http://zaoqirenlei.github.io/post/%E4%BD%BF%E7%94%A8VMware%E5%AE%89%E8%A3%85Macos12.html</id>
+    <published>2022-08-11T03:53:43.000Z</published>
+    <updated>2022-08-11T04:00:53.336Z</updated>
+    
+    <content type="html"><![CDATA[<p>（资源在最后）</p><p>首先 vmware本身是不支持直接安装macos的 所以我们就要借助补丁来小小地”帮助”一下vm。</p><p>打开我分享的补丁文件夹 </p><p>右键win-install.cmd 单击以管理员身份运行</p><p>授予权限（这里的所有步骤都要在关闭vmware的前提下进行 否则安装会失败）它会自动停止vmware的服务</p><p>待安装完成后再打开 完全解放双手 </p><p>如果意外安装失败 也可以手动停止vmware服务再运行（按住win＋r键 弹出的运行框中输入services.msc停用和vmware有关的所有服务）</p><p>安装好后打开vmware 按照正常创建虚拟机的步骤走一遍 </p><p>系统中应该会多出一个Apple Mac OS X</p><p>我们选择它 </p><p>然后硬件配置根据大家的物理机配置选择适当的配置就可以了 </p><p>比如我是5800x＋16g内存 就选择了13g（最大建议内存）＋8核心的配置</p><p>至于硬盘嘛 选择多大看大家的需求和实际硬盘大小 </p><p>之后也可以扩展 </p><p>所以我建议大家选择的大小可以不用太大 100g左右即可 </p><p>然后挂上我提供的那个.iso.txt文件 去掉.txt后缀 挂载到光盘上</p><p>完成了这步 你是不是急不可耐地想要开机了？</p><p>现在开机不出意外的话肯定会报错 </p><p>这时我们需要右键虚拟机 打开虚拟机位置 右键.vmx文件 用记事本打开 再打开我提供的txt文件</p><p>【Intel处理器】(我至今未尝试成功 如发现启动不了 无论是Intel处理器还是AMD处理器都可以尝试一下AMD的代码)</p><pre class="line-numbers language-none"><code class="language-none">smc.version &#x3D; &quot;0&quot;cpuid.0.eax &#x3D; &quot;0000:0000:0000:0000:0000:0000:0000:1011&quot;cpuid.0.ebx &#x3D; &quot;0111:0101:0110:1110:0110:0101:0100:0111&quot;cpuid.0.ecx &#x3D; &quot;0110:1100:0110:0101:0111:0100:0110:1110&quot;cpuid.0.edx &#x3D; &quot;0100:1001:0110:0101:0110:1110:0110:1001&quot;cpuid.1.eax &#x3D; &quot;0000:0000:0000:0001:0000:0110:0111:0001&quot;cpuid.1.ebx &#x3D; &quot;0000:0010:0000:0001:0000:1000:0000:0000&quot;cpuid.1.ecx &#x3D; &quot;1000:0010:1001:1000:0010:0010:0000:0011&quot;cpuid.1.edx &#x3D; &quot;0000:1111:1010:1011:1111:1011:1111:1111&quot;featureCompat.enable &#x3D; &quot;FALSE&quot;</code></pre><p>【AMD处理器】</p><pre class="line-numbers language-none"><code class="language-none">smc.version &#x3D; &quot;0&quot;cpuid.0.eax &#x3D; &quot;0000:0000:0000:0000:0000:0000:0000:1011&quot;cpuid.0.ebx &#x3D; &quot;0111:0101:0110:1110:0110:0101:0100:0111&quot;cpuid.0.ecx &#x3D; &quot;0110:1100:0110:0101:0111:0100:0110:1110&quot;cpuid.0.edx &#x3D; &quot;0100:1001:0110:0101:0110:1110:0110:1001&quot;cpuid.1.eax &#x3D; &quot;0000:0000:0000:0001:0000:0110:0111:0001&quot;cpuid.1.ebx &#x3D; &quot;0000:0010:0000:0001:0000:1000:0000:0000&quot;cpuid.1.ecx &#x3D; &quot;1000:0010:1001:1000:0010:0010:0000:0011&quot;cpuid.1.edx &#x3D; &quot;0000:0111:1000:1011:1111:1011:1111:1111&quot;</code></pre><p>AMD处理器就复制AMD代码 Intel处理器就复制Intel代码 </p><p>但是我用Intel的处理器的一直报错 但是使用AMD的代码却畅通无阻 </p><p>所以 大家要是Intel的处理器使用Intel的代码不行的话 也可以改用AMD代码尝试一下 </p><p>复制相应的代码后 直接粘贴在vmx文件末尾 </p><p>然后保存 正常开机</p><p>打开macos的安装界面 如果之前安装过的话 应该会很熟悉 </p><p>先点击磁盘工具 抹掉虚拟磁盘 </p><p>然后再返回 选择安装macos monterey </p><p>然后选择刚刚抹掉的磁盘 就开始安装macos了</p><p>安装好了macos 我们还要安装一下vmware tools </p><p>首先点击虚拟机 可移动设备 CD&#x2F;DVD 断开连接 </p><p>然后再点击安装vmware tools </p><p>应该会自动打开安装程序 按照它的引导安装就好了</p><hr><p>到此为止 macos的monterey12.1的安装已经完成 </p><p>至少在我的虚拟机上 更新是正常的</p><p>不过还是建议大家在更新之前拍摄一个快照 防止崩溃</p><p>当然 安装的macos是属于黑苹果 </p><p>许多白苹果功能都无法使用 大家可以自行洗白和安装驱动 </p><p>感谢大家的阅读 下面是链接</p><p>文章中使用的所有资源:</p><p><a href="https://www.aliyundrive.com/s/r3rmCeMAV6o">https://www.aliyundrive.com/s/r3rmCeMAV6o</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;（资源在最后）&lt;/p&gt;
+&lt;p&gt;首先 vmware本身是不支持直接安装macos的 所以我们就要借助补丁来小小地”帮助”一下vm。&lt;/p&gt;
+&lt;p&gt;打开我分享的补丁文件夹 &lt;/p&gt;
+&lt;p&gt;右键win-install.cmd 单击以管理员身份运行&lt;/p&gt;
+&lt;p&gt;授予权限（这里的所</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
