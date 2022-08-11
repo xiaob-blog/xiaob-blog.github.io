@@ -6,7 +6,7 @@
   <link href="http://zaoqirenlei.github.io/atom.xml" rel="self"/>
   
   <link href="http://zaoqirenlei.github.io/"/>
-  <updated>2022-08-11T06:32:40.285Z</updated>
+  <updated>2022-08-11T06:39:55.317Z</updated>
   <id>http://zaoqirenlei.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>在安卓手机上运行虚拟机</title>
+    <link href="http://zaoqirenlei.github.io/post/%E5%9C%A8%E5%AE%89%E5%8D%93%E6%89%8B%E6%9C%BA%E4%B8%8A%E8%BF%90%E8%A1%8C%E8%99%9A%E6%8B%9F%E6%9C%BA.html"/>
+    <id>http://zaoqirenlei.github.io/post/%E5%9C%A8%E5%AE%89%E5%8D%93%E6%89%8B%E6%9C%BA%E4%B8%8A%E8%BF%90%E8%A1%8C%E8%99%9A%E6%8B%9F%E6%9C%BA.html</id>
+    <published>2022-08-11T06:38:08.000Z</published>
+    <updated>2022-08-11T06:39:55.317Z</updated>
+    
+    <content type="html"><![CDATA[<p>虽然版本很多 但主要也就是那几种 加上我之前略略研究过 算是懂得些皮毛 我的建议是这几种启动器:</p><p>boches limbo qemu</p><p>其中boches有些衍生版本 不多介绍 另外 limbo是基于qemu内核的 算是个增强版 效率目前基本持平 所以我倾向于使用limbo 目前最新版本是6.0.0 但我一直在用5.1.0 没啥原因（其实是懒得更新）</p><p>至于链接:</p><p>官网（国内可能上不去）: <a href="https://github.com/limboemu/limbo/wiki/Guides">https://github.com/limboemu/limbo/wiki/Guides</a></p><p>我的网盘（5.1.0）:<a href="https://quqi.avyeld.com/s/3435758/MiDiam3nYwas8tta">https://quqi.avyeld.com/s/3435758/MiDiam3nYwas8tta</a></p><p>至于用虚拟机嘛 自然是要玩系统的 镜像太大所以我给的官网链接（不要说破 其实我是懒得上传）</p><p>win11: <a href="https://www.microsoft.com/zh-cn/software-download/windows11">https://www.microsoft.com/zh-cn/software-download/windows11</a></p><p>win10: <a href="https://www.microsoft.com/zh-cn/software-download/windows10ISO">https://www.microsoft.com/zh-cn/software-download/windows10ISO</a></p><p>win8.1: <a href="https://www.microsoft.com/zh-cn/software-download/windows8ISO">https://www.microsoft.com/zh-cn/software-download/windows8ISO</a></p><p>Linux发行版很多 加上随便百度一下就能找到官网 所以我就不再一一放出 麻烦大家自己百度了</p><p>Macos big sur:<a href="https://cloud.189.cn/web/share?code=QjI7reruUn6f">https://cloud.189.cn/web/share?code=QjI7reruUn6f</a></p><p>那么</p><p>我们现在有了系统 要把它放在哪呢？</p><p>我最近只接触过limbo 所以只能确定limbo只能创建最大20gb的虚拟磁盘</p><p>根本不够用啊！</p><p>所以</p><p>我们就需要更大的虚拟磁盘了</p><p>比如</p><p>16tb的？</p><p>没错 是TB！（当然 不会给你手机扩容的 只是欺骗了系统而已 东西还是存在你的内部存储中 当然 是会压缩的）</p><p>16TB虚拟磁盘:</p><p><a href="https://quqi.avyeld.com/s/3435758/L1h43XgokbarQf6E">https://quqi.avyeld.com/s/3435758/L1h43XgokbarQf6E</a></p><p>另外 如果您是玩Linux的 我建议您用termux 这是一个十分好用的虚拟终端 完全适配安卓</p><p>termux链接:<a href="https://f-droid.org/repo/com.termux_117.apk">https://f-droid.org/repo/com.termux_117.apk</a></p><p>termux原生是不适配图形化界面的 所以我们就需要一个远程桌面来链接（termux xfce默认ip:127.0.0.1:5901）这里我推荐vnc viewer</p><p>vnc viewver（我在用的版本 不知道是不是最新版）:</p><p><a href="https://quqi.avyeld.com/s/3435758/300ylIoAs9VTjSZo">https://quqi.avyeld.com/s/3435758/300ylIoAs9VTjSZo</a></p><p>考虑到大家可能都不会搞这个东西 我给大家准备了一个十分流行的工具:anlinux！</p><p>anlinux（进去直接复制代码就好 十分简单 但可用性我不敢保证）（这是第三方链接哦 大家慎重访问 我是没问题的）:</p><p><a href="http://b.xzfile.com/apk3/anlinuxv6.21stable_downcc.com.apk">http://b.xzfile.com/apk3/anlinuxv6.21stable_downcc.com.apk</a></p><p>另外 我还为大家准备了另外一份文字安装教程 防止上面的工具失效（kali是用两种方法都安装不了的 很抱歉没能给大家解决方案）（这份教程不是我写的 望大家多多尊重和支持原作者哦！）</p><p>文字教程:</p><p><a href="https://blog.csdn.net/zzhds/article/details/115976332">https://blog.csdn.net/zzhds/article/details/115976332</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;虽然版本很多 但主要也就是那几种 加上我之前略略研究过 算是懂得些皮毛 我的建议是这几种启动器:&lt;/p&gt;
+&lt;p&gt;boches limbo qemu&lt;/p&gt;
+&lt;p&gt;其中boches有些衍生版本 不多介绍 另外 limbo是基于qemu内核的 算是个增强版 效率目前基本持平 所</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>使用UTM在ios14+设备上运行虚拟机</title>
