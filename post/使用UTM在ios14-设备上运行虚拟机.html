@@ -1,0 +1,226 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>使用UTM在ios14+设备上运行虚拟机 | XIAO_B</title><meta name="author" content="xiao_b"><meta name="copyright" content="xiao_b"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="我推荐使用官方推荐的ios自签应用：Altstore(https:&#x2F;&#x2F;altstore.io&#x2F;) 几乎任何自签名软件都是需要一台电脑的 并且需要每七天续签一次 感觉麻烦？ 那就可以购买开发者签名服务 （使用这个方法无需任何电脑） 我推荐的开发者签名网站 ：isign(https:&#x2F;&#x2F;isign.ren) 首先 下载最新版ITunes和ICloud （ITunes：https:&#x2F;&#x2F;support.a">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用UTM在ios14+设备上运行虚拟机">
+<meta property="og:url" content="http://zaoqirenlei.github.io/post/%E4%BD%BF%E7%94%A8UTM%E5%9C%A8ios14-%E8%AE%BE%E5%A4%87%E4%B8%8A%E8%BF%90%E8%A1%8C%E8%99%9A%E6%8B%9F%E6%9C%BA.html">
+<meta property="og:site_name" content="XIAO_B">
+<meta property="og:description" content="我推荐使用官方推荐的ios自签应用：Altstore(https:&#x2F;&#x2F;altstore.io&#x2F;) 几乎任何自签名软件都是需要一台电脑的 并且需要每七天续签一次 感觉麻烦？ 那就可以购买开发者签名服务 （使用这个方法无需任何电脑） 我推荐的开发者签名网站 ：isign(https:&#x2F;&#x2F;isign.ren) 首先 下载最新版ITunes和ICloud （ITunes：https:&#x2F;&#x2F;support.a">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
+<meta property="article:published_time" content="2022-08-11T06:20:46.000Z">
+<meta property="article:modified_time" content="2022-08-11T06:32:40.285Z">
+<meta property="article:author" content="xiao_b">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://zaoqirenlei.github.io/post/%E4%BD%BF%E7%94%A8UTM%E5%9C%A8ios14-%E8%AE%BE%E5%A4%87%E4%B8%8A%E8%BF%90%E8%A1%8C%E8%99%9A%E6%8B%9F%E6%9C%BA"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"prismjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '使用UTM在ios14+设备上运行虚拟机',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2022-08-11 14:32:40'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.2.0"><link rel="alternate" href="/atom.xml" title="XIAO_B" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">XIAO_B</a></span><div id="menus"><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">使用UTM在ios14+设备上运行虚拟机</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-08-11T06:20:46.000Z" title="发表于 2022-08-11 14:20:46">2022-08-11</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2022-08-11T06:32:40.285Z" title="更新于 2022-08-11 14:32:40">2022-08-11</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="使用UTM在ios14+设备上运行虚拟机"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>我推荐使用官方推荐的ios自签应用：Altstore(<a target="_blank" rel="noopener" href="https://altstore.io/">https://altstore.io/</a>)</p>
+<p>几乎任何自签名软件都是需要一台电脑的</p>
+<p>并且需要每七天续签一次</p>
+<p>感觉麻烦？</p>
+<p>那就可以购买开发者签名服务</p>
+<p>（使用这个方法无需任何电脑）</p>
+<p>我推荐的开发者签名网站 ：isign(<a target="_blank" rel="noopener" href="https://isign.ren/">https://isign.ren</a>)</p>
+<p>首先 下载最新版ITunes和ICloud</p>
+<p>（ITunes：<a target="_blank" rel="noopener" href="https://support.apple.com/kb/DL2065?locale=zh_CN">https://support.apple.com/kb/DL2065?locale=zh_CN</a></p>
+<p>ICloud：<a target="_blank" rel="noopener" href="https://updates.cdn-apple.com/2020/windows/001-39935-20200911-1A70AA56-F448-11EA-8CC0-99D41950005E/iCloudSetup.exe">https://updates.cdn-apple.com/2020/windows/001-39935-20200911-1A70AA56-F448-11EA-8CC0-99D41950005E/iCloudSetup.exe</a> ）</p>
+<p>然后从刚才的官网下载Altserver（pc端 需要Windows 10或更高版本）</p>
+<p>然后解压 双击里面任意一个文件</p>
+<p>根据引导安装</p>
+<p>安装完成后 你会发现托盘里多出一个菱形</p>
+<p>那个就是Altserver</p>
+<p>然后掏出你的lightning数据线 连接上你的iPhone</p>
+<p>打开ITunes 点击手机图标-摘要-下拉找到选项-勾选通过WIFI同步</p>
+<p>查看手机并选择信任此电脑</p>
+<p>然后右键那个菱形 点击Install Altstore并选择你的设备</p>
+<p>然后输入你的Apple ID和密码用作签名</p>
+<p>（强烈建议注册一个新ID来签名）</p>
+<p>这时电脑会弹出Installing提示</p>
+<p>等待再次弹出Installed后打开手机</p>
+<p>你会发现多了一个Altstore</p>
+<p>这时候它是打不开的</p>
+<p>打开手机的设置-通用-描述文件与设备管理-你的Apple ID-点击信任</p>
+<p>这样就可以打开啦</p>
+<p>然后在手机上点击 <a target="_blank" rel="noopener" href="https://alt.getutm.app/">https://alt.getutm.app</a></p>
+<p>应该会跳转至Altstore</p>
+<p>点击Add Source</p>
+<p>在Browse选项卡就可以找到UTM和UTM SE了</p>
+<hr>
+<p>这里注意区分 UTM是需要JIT的 但UTM SE不需要</p>
+<p>但是代价就是UTM SE少了将近60%性能！</p>
+<p>当然 如果只是尝鲜 可以直接点击下载UTM SE</p>
+<p>（安装任何软件都需要连接电脑 如果弹出登录ID 请登录刚才电脑登录的ID）</p>
+<p>但是如果要使用的话 请点击安装后继续往下看</p>
+<hr>
+<p>UTM标准版在越狱环境下是可以正常运行的</p>
+<p>（还有自带越狱的A12以上ios14.2和14.3）</p>
+<p>但是非越狱环境呢？</p>
+<p>我们可以利用一个插件</p>
+<p>这个插件就是UTM作者osy的另一个开源项目</p>
+<p>Jitterbug</p>
+<p>它模拟了ios内置的Xcode调试器来在非越狱环境下运行越狱应用</p>
+<p>Jitterbug的Github存储库：<a target="_blank" rel="noopener" href="https://github.com/osy/Jitterbug/releases">https://github.com/osy/Jitterbug/releases</a></p>
+<p>我们可以从自己的手机上开启JIT（需要开发者签名 建议使用上面的isign）</p>
+<p>或者用另一台ios设备调试本机（一会会分开讲）</p>
+<p>注意 使用Jitterbug需要处于WIFI环境</p>
+<hr>
+<p>首先 将手机连接到电脑</p>
+<p>电脑打开<a target="_blank" rel="noopener" href="https://github.com/osy/Jitterbug/releases%E5%B9%B6%E9%80%89%E6%8B%A9%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC">https://github.com/osy/Jitterbug/releases并选择最新版本</a></p>
+<p>拉到界面最底下会发现有三个文件 下载你对应版本的文件</p>
+<p>然后使用cmd执行解压出来的执行文件</p>
+<p>然后在解压目录会出现配对文件 将它传输至手机</p>
+<p>然后 在<a target="_blank" rel="noopener" href="https://github.com/mspvirajpatel/Xcode_Developer_Disk_Images/releases%E4%B8%AD%E6%89%BE%E5%88%B0%E8%B7%9F%E6%82%A8%E7%9A%84ios%E7%89%88%E6%9C%AC%E4%B8%80%E8%87%B4%E6%88%96%E6%9C%80%E6%8E%A5%E8%BF%91%E7%9A%84%E7%89%88%E6%9C%AC">https://github.com/mspvirajpatel/Xcode_Developer_Disk_Images/releases中找到跟您的ios版本一致或最接近的版本</a> 并下载 【版本号】.zip 并在解压后将（全部两个！！！）文件使用刚才的方法传输至手机</p>
+<p>在这之后 请使用您的开发者签名或在isign签名并安装最新版的Jitterbug</p>
+<p>（ipa：<strong><a target="_blank" rel="noopener" href="https://github.com/osy/Jitterbug/releases">https://github.com/osy/Jitterbug/releases</a> 选择版本并划到最后）</strong></p>
+<p>然后将镜像挂载至Jitterbug</p>
+<p>最后 在启动台中选择您的被控iPhone（可以是本机）再选择配对文件即可正常运行</p>
+<p>如果要选择支持文件 优先选择dmg格式文件</p>
+<p>或者使用另一台ios设备远程调试您的iPhone</p>
+<p>只需要将以上操作在主控机上进行操作即可（这种方式不需要开发者签名</p>
+<p>直接侧载即可）</p>
+<p>或者 如果您的手边有一台Windows Pc 您也可以使用Altjit临时开启Jit权限</p>
+<p>操作方法：</p>
+<p>（以下操作请先退出Altserver）</p>
+<p>首先在pc端下载发布 ·libimobiledevice-win32&#x2F;imobiledevice-net ·GitHub的最新版本中的符合您操作系统架构的zip包</p>
+<p>请将该zip解压缩至C:\libimobiledevice (没有则创建) 以方便后面的指令操作</p>
+<p>并且在<a target="_blank" rel="noopener" href="https://github.com/mspvirajpatel/Xcode_Developer_Disk_Images/releases">https://github.com/mspvirajpatel/Xcode_Developer_Disk_Images/releases</a></p>
+<p>中选择跟您的ios版本一致或最接近的版本 同样解压至C:\libimobiledevice中</p>
+<p>现在 以刚才配对时的方法打开命令提示符并导航至C:\libimobiledevice 输入</p>
+<pre class="line-numbers language-none"><code class="language-none">
+ideviceimagemounter.exe C:\libimobiledevice\DeveloperDiskImage.dmg</code></pre>
+
+<p>现在 请将您的手机通过数据线连接至电脑 并且启动Altserver</p>
+<p>右键Altserver在托盘中的图标 并且点击Enable JIT-您的设备-要启用JIT的应用（保证应用在前台运行）出现JIT will remain enable提示就是启用成功啦</p>
+<p>在退出应用之前 您选择的应用都是在以JIT模式运行</p>
+<p>（用这种方法UTM可能错误地提示缺失JIT权限 您可以无视它）</p>
+<p>到此为止 我已经介绍了在无越狱的情况下运行UTM标准版的所有（也许？）方法 大家可以自己尝试</p>
+<p>如果遇到问题可以直接在公众号后台询问 看到就会回复</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://zaoqirenlei.github.io">xiao_b</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://zaoqirenlei.github.io/post/%E4%BD%BF%E7%94%A8UTM%E5%9C%A8ios14-%E8%AE%BE%E5%A4%87%E4%B8%8A%E8%BF%90%E8%A1%8C%E8%99%9A%E6%8B%9F%E6%9C%BA.html">http://zaoqirenlei.github.io/post/%E4%BD%BF%E7%94%A8UTM%E5%9C%A8ios14-%E8%AE%BE%E5%A4%87%E4%B8%8A%E8%BF%90%E8%A1%8C%E8%99%9A%E6%8B%9F%E6%9C%BA.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://zaoqirenlei.github.io" target="_blank">XIAO_B</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/post/%E4%BD%BF%E7%94%A8VMware%E5%AE%89%E8%A3%85Macos12.html"><img class="next-cover" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">使用VMware安装Macos12</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">xiao_b</div><div class="author-info__description">DYZ</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">2</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/post/%E4%BD%BF%E7%94%A8UTM%E5%9C%A8ios14-%E8%AE%BE%E5%A4%87%E4%B8%8A%E8%BF%90%E8%A1%8C%E8%99%9A%E6%8B%9F%E6%9C%BA.html" title="使用UTM在ios14+设备上运行虚拟机"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="使用UTM在ios14+设备上运行虚拟机"/></a><div class="content"><a class="title" href="/post/%E4%BD%BF%E7%94%A8UTM%E5%9C%A8ios14-%E8%AE%BE%E5%A4%87%E4%B8%8A%E8%BF%90%E8%A1%8C%E8%99%9A%E6%8B%9F%E6%9C%BA.html" title="使用UTM在ios14+设备上运行虚拟机">使用UTM在ios14+设备上运行虚拟机</a><time datetime="2022-08-11T06:20:46.000Z" title="发表于 2022-08-11 14:20:46">2022-08-11</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/post/%E4%BD%BF%E7%94%A8VMware%E5%AE%89%E8%A3%85Macos12.html" title="使用VMware安装Macos12"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="使用VMware安装Macos12"/></a><div class="content"><a class="title" href="/post/%E4%BD%BF%E7%94%A8VMware%E5%AE%89%E8%A3%85Macos12.html" title="使用VMware安装Macos12">使用VMware安装Macos12</a><time datetime="2022-08-11T03:53:43.000Z" title="发表于 2022-08-11 11:53:43">2022-08-11</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By xiao_b</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"></div><script src="https://cdn.jsdelivr.net/npm/prismjs/prism.min.js"></script><script src="https://cdn.jsdelivr.net/npm/prismjs/plugins/autoloader/prism-autoloader.min.js"></script><script src="https://cdn.jsdelivr.net/npm/prismjs/plugins/line-numbers/prism-line-numbers.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
