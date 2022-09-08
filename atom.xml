@@ -6,7 +6,7 @@
   <link href="http://zaoqirenlei.github.io/atom.xml" rel="self"/>
   
   <link href="http://zaoqirenlei.github.io/"/>
-  <updated>2022-09-08T05:59:46.100Z</updated>
+  <updated>2022-08-11T06:39:55.317Z</updated>
   <id>http://zaoqirenlei.github.io/</id>
   
   <author>
@@ -15,27 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>test</title>
-    <link href="http://zaoqirenlei.github.io/post/test.html"/>
-    <id>http://zaoqirenlei.github.io/post/test.html</id>
-    <published>2022-09-08T05:57:55.000Z</published>
-    <updated>2022-09-08T05:59:46.100Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="/.%5Ctest%5C1.png" alt="微信截图_20220908135812"></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;/.%5Ctest%5C1.png&quot; alt=&quot;微信截图_20220908135812&quot;&gt;&lt;/p&gt;
-</summary>
-      
-    
-    
-    
-    
-  </entry>
   
   <entry>
     <title>在安卓手机上运行虚拟机</title>
