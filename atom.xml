@@ -3,11 +3,11 @@
   <title>XIAO_B</title>
   
   
-  <link href="http://zaoqirenlei.github.io/atom.xml" rel="self"/>
+  <link href="http://xiaob-blog.github.io/atom.xml" rel="self"/>
   
-  <link href="http://zaoqirenlei.github.io/"/>
+  <link href="http://xiaob-blog.github.io/"/>
   <updated>2022-08-11T06:39:55.317Z</updated>
-  <id>http://zaoqirenlei.github.io/</id>
+  <id>http://xiaob-blog.github.io/</id>
   
   <author>
     <name>xiao_b</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>在安卓手机上运行虚拟机</title>
-    <link href="http://zaoqirenlei.github.io/post/%E5%9C%A8%E5%AE%89%E5%8D%93%E6%89%8B%E6%9C%BA%E4%B8%8A%E8%BF%90%E8%A1%8C%E8%99%9A%E6%8B%9F%E6%9C%BA.html"/>
-    <id>http://zaoqirenlei.github.io/post/%E5%9C%A8%E5%AE%89%E5%8D%93%E6%89%8B%E6%9C%BA%E4%B8%8A%E8%BF%90%E8%A1%8C%E8%99%9A%E6%8B%9F%E6%9C%BA.html</id>
+    <link href="http://xiaob-blog.github.io/post/%E5%9C%A8%E5%AE%89%E5%8D%93%E6%89%8B%E6%9C%BA%E4%B8%8A%E8%BF%90%E8%A1%8C%E8%99%9A%E6%8B%9F%E6%9C%BA.html"/>
+    <id>http://xiaob-blog.github.io/post/%E5%9C%A8%E5%AE%89%E5%8D%93%E6%89%8B%E6%9C%BA%E4%B8%8A%E8%BF%90%E8%A1%8C%E8%99%9A%E6%8B%9F%E6%9C%BA.html</id>
     <published>2022-08-11T06:38:08.000Z</published>
     <updated>2022-08-11T06:39:55.317Z</updated>
     
@@ -40,8 +40,8 @@
   
   <entry>
     <title>使用UTM在ios14+设备上运行虚拟机</title>
-    <link href="http://zaoqirenlei.github.io/post/%E4%BD%BF%E7%94%A8UTM%E5%9C%A8ios14-%E8%AE%BE%E5%A4%87%E4%B8%8A%E8%BF%90%E8%A1%8C%E8%99%9A%E6%8B%9F%E6%9C%BA.html"/>
-    <id>http://zaoqirenlei.github.io/post/%E4%BD%BF%E7%94%A8UTM%E5%9C%A8ios14-%E8%AE%BE%E5%A4%87%E4%B8%8A%E8%BF%90%E8%A1%8C%E8%99%9A%E6%8B%9F%E6%9C%BA.html</id>
+    <link href="http://xiaob-blog.github.io/post/%E4%BD%BF%E7%94%A8UTM%E5%9C%A8ios14-%E8%AE%BE%E5%A4%87%E4%B8%8A%E8%BF%90%E8%A1%8C%E8%99%9A%E6%8B%9F%E6%9C%BA.html"/>
+    <id>http://xiaob-blog.github.io/post/%E4%BD%BF%E7%94%A8UTM%E5%9C%A8ios14-%E8%AE%BE%E5%A4%87%E4%B8%8A%E8%BF%90%E8%A1%8C%E8%99%9A%E6%8B%9F%E6%9C%BA.html</id>
     <published>2022-08-11T06:20:46.000Z</published>
     <updated>2022-08-11T06:32:40.285Z</updated>
     
@@ -63,8 +63,8 @@
   
   <entry>
     <title>使用VMware安装Macos12</title>
-    <link href="http://zaoqirenlei.github.io/post/%E4%BD%BF%E7%94%A8VMware%E5%AE%89%E8%A3%85Macos12.html"/>
-    <id>http://zaoqirenlei.github.io/post/%E4%BD%BF%E7%94%A8VMware%E5%AE%89%E8%A3%85Macos12.html</id>
+    <link href="http://xiaob-blog.github.io/post/%E4%BD%BF%E7%94%A8VMware%E5%AE%89%E8%A3%85Macos12.html"/>
+    <id>http://xiaob-blog.github.io/post/%E4%BD%BF%E7%94%A8VMware%E5%AE%89%E8%A3%85Macos12.html</id>
     <published>2022-08-11T03:53:43.000Z</published>
     <updated>2022-08-11T04:00:53.336Z</updated>
     
